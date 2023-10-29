@@ -8,13 +8,14 @@
     transition: all .5s;
 }
 
+.searchbtn:hover{
+    background-color: #689c89;
+}
+
 nav{
     background-color: rgba(0,0,0, 80%);
 }
 
-.searchbtn:hover{
-    background-color: #689c89;
-}
 
 .formofnavbar{
     align-items: center;

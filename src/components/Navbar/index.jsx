@@ -6,7 +6,7 @@ function App() {
     return (
         <nav className="navbar navbar-expand-lg z-1 position-sticky left-0 top-0">
             <div className="container-fluid align-center">
-                <a onClick={()=> navigateTo('./')} className="navbar-brand fs-3 websiteclr">E-Learning</a>
+                <a onClick={()=> navigateTo('../')} className="navbar-brand fs-3 websiteclr">E-Learning</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

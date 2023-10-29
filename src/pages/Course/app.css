@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imgareatwo{
+    width: 100vw;
+    height: 80vh;
+    /* overflow: scroll; */
+    display: flex;
+}
+
+.imgareatwo img{
+    width: 100vw;
+    /* transform: translateX(-100vw); */
+    transform: translateX(0);
+    object-fit: contain;
+    height: 80vh;
+    animation: ghomnewalaslides 10s infinite ease-in-out;
+}
+
+.mainvideoofcourse{
+    width: 100vw;
+    margin: 10px auto;
+    /* text-align: center; */
+    height: 500px;
+}
+
+.likebtnofcourse{
+    margin-left: auto;
+    margin-right: 50px;
+    color: #fff;
+    background-color: #84C7AE;
+    padding: 6px 20px;
+    border: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: all .5s;
+    
+}
+.likebtnofcourse:hover{
+    color: #84C7AE;
+    background-color: #fff;
+}
+
+
+@keyframes ghomnewalaslides {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
+}

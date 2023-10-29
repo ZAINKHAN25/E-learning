@@ -1,10 +1,10 @@
 body{
     width: 100vw;
     overflow-x: hidden;
-    padding: 20px 0 10px 0;
 }
 
 .signUpPage{
+    padding: 20px 0 10px 0;
     width: 100vw;
     /* height: 100vh; */
     display: flex;
