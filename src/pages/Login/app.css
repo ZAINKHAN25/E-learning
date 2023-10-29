@@ -67,7 +67,7 @@ input:focus{
 }
 
 .signInTxt{
-    color: blue;
+    color: #7171e3;
     cursor: pointer;
     text-decoration: underline;
 }
