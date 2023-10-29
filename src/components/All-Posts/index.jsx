@@ -59,6 +59,7 @@ function App() {
                             <span onClick={() => nextcourseimg(i)}>{'<'}</span>
                             <span onClick={() => previoscourseimg(i)}>{'>'}</span>
                         </div>
+                        <button className='registrationbtn'>Register for this Course</button>
                     </div>
                 )
             })}

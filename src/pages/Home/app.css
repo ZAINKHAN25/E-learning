@@ -1,0 +1,34 @@
+.ourLatestCourseheding{
+    margin-left: 5vw;
+    color: rgba(0,0,0, 80%);
+    margin-top: 10vh;
+}
+
+.ulofcontactus{
+    list-style: none;
+}
+
+.ulofcontactus li{
+    margin: 10px 0;
+}
+
+
+.contactusdiv{
+    padding: 5vh 5vw;
+    background-color: rgba(0,0,0, 80%);
+    color: white;
+}
+
+.contactusdiv h2{
+    margin-bottom: 30px;
+}
+
+.aboutusdiv{
+    padding: 5vh 5vw;
+}
+
+.footerdiv{
+    background-color: rgba(0,0,0, 80%);
+    color: white;
+    padding: 10vh 5vw;
+}

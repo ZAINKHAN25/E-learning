@@ -7,6 +7,8 @@
     padding: 10px;
     background-color: white;
     overflow-x: hidden;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px gray;
 }
 
 .singlediv:hover .leftRightBtn span {
@@ -64,4 +66,20 @@
     margin-top: 10px;
     margin-bottom: 15px;
     
+}
+
+.registrationbtn{
+    border: none;
+    background-color: rgba(0,0,0, 80%);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: all .5s;
+}
+
+.registrationbtn:hover{
+    background-color: rgba(0,0,0, 90%);
 }

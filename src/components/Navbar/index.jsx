@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function App() {
     const navigateTo = useNavigate()
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg z-1 position-sticky left-0 top-0">
             <div className="container-fluid align-center">
                 <a onClick={()=> navigateTo('./')} className="navbar-brand fs-3 websiteclr">E-Learning</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,10 +16,7 @@ function App() {
                             <a className="nav-link websiteclr" >Courses</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link websiteclr" >Trainers</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link websiteclr" >Cotact Us</a>
+                            <a className="nav-link websiteclr" >Contact Us</a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link websiteclr" >About Us</a>
