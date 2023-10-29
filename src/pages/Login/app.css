@@ -1,0 +1,93 @@
+.signUpPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #84C7AE;
+}
+
+.signupcard{
+    width: 600px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 80%);
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 15px 1px rgba(0, 0, 0, 30%);
+    margin: 0 10px;
+}
+
+input{
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px 0;
+    border: 1px solid gray;
+}
+
+input:focus{
+    outline: none;
+}
+
+.h3ofsignup{
+    font-size: 40px;
+}
+
+.paraofsignup{
+    font-size: 18px;
+}
+
+.teacherOrStudent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.teacherOrStudent p{
+    margin: 0;
+}
+
+.signupbutton{
+    width: 200px;
+    margin: 10px auto;
+    border: none;
+    background-color: #84C7AE;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.signupbutton:hover{
+    background-color: #689c89;
+}
+
+.signInTxt{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.errordiv{
+    text-align: left;
+    color: red;
+}
+
+.selectofsignup {
+    background-color: #84C7AE;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    box-shadow: 2px 1.5px 5px gray;
+}
+
+.selectofsignup option:focus{
+    outline: none;
+    border: none;
+}
