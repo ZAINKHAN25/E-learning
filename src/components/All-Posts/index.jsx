@@ -1,25 +1,54 @@
+import './app.css'
+
 import Allcourses from '../../DummyData/Course.js';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
-    let [allcoursesArr, setallcoursesArr] = useState([])
+    let [allcoursesArr, setallcoursesArr] = useState([]);
+    let [currentimg, setcurrentimg] = useState(0)
+
+    useEffect(() => {
+        setallcoursesArr(Allcourses)
+    }, [])
+
+    function previoscourseimg(){
+        if(currentimg === 0){
+            setcurrentimg(-200)
+        } else{
+            setcurrentimg(currentimg + 100)
+        }
+    }
+
+    function nextcourseimg(){
+        if(currentimg === -200){
+            setcurrentimg(0)
+        } else{
+            setcurrentimg(currentimg - 100)
+        }
+    }
 
     return (
         <>
             {
                 allcoursesArr.map((single, i) => {
+                    return (
                     <div key={i} className='singlediv'>
-                        <div className="imgarea">
-                            <img className='singleimgofcourse' src={single.imageone} />
-                            <img className='singleimgofcourse' src={single.imagetwo} />
-                            <img className='singleimgofcourse' src={single.imagethree} />
+                        <div  className="imgarea">
+                            <img style={{transform: `translateX(${currentimg}%)`}} className='singleimgofcourse' src={single.imageone} />
+                            <img style={{transform: `translateX(${currentimg}%)`}} className='singleimgofcourse' src={single.imagetwo} />
+                            <img style={{transform: `translateX(${currentimg}%)`}} className='singleimgofcourse' src={single.imagethree} />
                         </div>
-                        <h5 className='headingofcourse'></h5>
+                        <h5 className='headingofcourse'>{single.heading}</h5>
                         <div className="anlysiscoursediv">
                             <span>{single.like}</span>
                             <span>{single.veiws}</span>
                         </div>
+                        <div className='leftRightBtn'>
+                            <span onClick={previoscourseimg}>{true && '<'}</span>
+                            <span onClick={nextcourseimg}>{true && '>'}</span>
+                        </div>
                     </div>
+                    )
                 })
             }
         </>
