@@ -6,6 +6,7 @@ function App(){
         <div className='homepage'>
             <div className="homewrapper">
                 <Navbar/>
+                <Allposts/>
             </div>
         </div>
     )
