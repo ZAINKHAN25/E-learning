@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.chatpage {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.chatwrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.chatcommunitydiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    top: 73px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 50%);
+    width: 100vw;
+}
+
+.chatcommunityimg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+    background-color: skyblue;
+    border: 2px solid white;
+    margin: 0 10px 0 30px;
+}
+
+.mainchatarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.friendChat {
+    width: max-content;
+    background-color: rgba(255, 255, 255, 30%);
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.mineChat {
+    width: max-content;
+    margin-left: auto;
+    background-color: rgba(55, 55, 55, 30%);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.dateofchat {
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+
+.backToHomeIcon{
+    transition: all .5s;
+}
+
+.backToHomeIcon:hover{
+    color: rgba(0, 0, 0, 50%);
+}
+
+.inputdiv{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.inputOfChat{
+    width: 90%;
+    outline: none;
+    border: none;
+}
+
