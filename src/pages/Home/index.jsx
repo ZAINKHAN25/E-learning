@@ -2,12 +2,32 @@ import './app.css'
 import Navbar from '../../components/Navbar/index.jsx';
 import Allposts from '../../components/All-Posts/index.jsx'
 
+import { useNavigate } from 'react-router-dom';
+
+import {onAuthStateChanged, auth} from '../../firebaseconfig.js'
+
 function App() {
+
+    const navigatTo = useNavigate()
+
+
+
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            const uid = user.uid;
+        } else {
+            navigatTo('../login')   
+        }
+    });
+
     return (
         <div className='homepage'>
             <div className="homewrapper">
                 <Navbar />
-                <h1 className='ourLatestCourseheding'>Our Courses</h1>
+                <h1 className='ourLatestCourseheding'>Your Courses :</h1>
+                <div className='d-flex flex-wrap justify-content-center'>
+                </div>
+                <h1 className='ourLatestCourseheding'>Our Courses : </h1>
                 <div className='d-flex flex-wrap justify-content-center'>
                     <Allposts />
                 </div>
