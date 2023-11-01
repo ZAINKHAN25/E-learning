@@ -8,6 +8,7 @@ import Coursemessage from './pages/Coursemessage/index.jsx'
 import Uploadcourse from './pages/Uploadcourse/index.jsx'
 import Courseregister from './pages/Registercourse/index.jsx'
 import Pagenotfound from './pages/Pagenofound/index.jsx'
+// import 'https://kit.fontawesome.com/a076d05399.js';
 
 function App() {
   return (
