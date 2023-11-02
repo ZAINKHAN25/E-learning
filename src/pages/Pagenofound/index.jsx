@@ -3,7 +3,7 @@ import './app.css'
 function App(){
     return (
         <>
-            hello
+            404 error
         </>
     )
 }

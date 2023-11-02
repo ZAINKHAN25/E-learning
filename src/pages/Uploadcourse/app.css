@@ -1,0 +1,26 @@
+.uploadCoursePage{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.textareaofuploadcourse{
+    width: 100%;
+    min-height: 100px;
+    height: 150px;
+    padding: 15px;
+    font-size: 14px;
+    outline: none;
+    border-radius: 15px;
+}
+
+.uploadareaofcourse span{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.uploadareaofcourse span h4{
+    font-size: 20px;
+}
